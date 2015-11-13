@@ -17,8 +17,12 @@ class SessionMiddleware
     public function __construct ($name = 'default')
     {
         if (!isset($_SESSION)) {
-            session_name($name);
-            session_start();
+            if (php_sapi_name() == "cli") {
+                $_SESSION = [];
+            } else {
+                session_name($name);
+                session_start();
+            }
         }
     }
 
