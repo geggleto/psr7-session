@@ -12,7 +12,7 @@ namespace Geggleto\Middleware;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-class SessionMiddleware
+class Session
 {
     public function __construct ($name = 'default')
     {

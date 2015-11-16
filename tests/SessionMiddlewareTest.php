@@ -37,7 +37,7 @@ class SessionMiddlewareTest extends \PHPUnit_Framework_TestCase
     }
 
     public function testSessionMiddleware() {
-        $sessionMiddleware = new \Geggleto\Middleware\SessionMiddleware();
+        $sessionMiddleware = new \Geggleto\Middleware\Session();
         $_SESSION = [
             'a' => 'b'
         ];
