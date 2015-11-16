@@ -5,7 +5,7 @@ This middleware injects your middleware contents into the Request Object.
 ## Usage
 
 ```php
-$app->add(new \Geggleto\Middleware\SessionMiddleware('session_name'));
+$app->add(new \Geggleto\Middleware\Session('session_name'));
 ```
 
 ## Example
