@@ -1,5 +1,5 @@
 {
-  "name": "geggleto/sessionmiddleware",
+  "name": "geggleto/psr7-session",
   "type" : "library",
   "description": "Inject Session Data into Request Object",
   "keywords": ["slim","framework","middleware"],
